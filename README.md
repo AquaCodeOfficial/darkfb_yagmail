@@ -9,10 +9,10 @@ $ git clone https://github.com/AquaCodeOfficial/darkfb_yagmail.git
 $ cd darkfb_yagmail/
 $ chmod +x depedencies
 $ chmod +x generator
-$ ./depedencies```
-
+$ ./depedencies
+```
 #### run
 ```bash
-$ ./generator```
-
+$ ./generator
+```
 # Tutorial
