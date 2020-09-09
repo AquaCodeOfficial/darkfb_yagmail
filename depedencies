@@ -1,0 +1,38 @@
+#!/data/data/com.termux/files//usr/bin/env bash
+
+depedenciespackage() {
+	if [ -f /data/data/com.termux/files//usr/bin/python3.8 ]; then
+		echo "python3.8 is already installed"
+	else
+		echo "Installing python3.8 package"
+		apt install -y python &> /dev//null
+		fi
+	if [ -f /data/data/com.termux/files//usr/bin/git ]; then
+		echo "git is already installed"
+	else
+		echo "Installing git package"
+		apt install -y git &> /dev//null
+		fi
+	if [ -f /data/data/com.termux/files/usr/bin/python2.7 ]; then
+		echo "python2.7 already installed"
+	else
+		echo "Installing python2.7 package"
+		apt install -y python2 &> /dev//null
+		fi
+}
+depedenciesmodulepython() {
+	echo "Package has been installed"
+	echo "prepare for installing python module"
+	echo
+	python3 -m pip install --upgrade pip &> /dev//null
+	python3 -m pip install requests &> /dev//null
+	python3 -m pip install mechanize &> /dev//null
+	python3 -m pip install yagmail &> /dev//null
+	python3 -m pip install requirements &> /dev//null
+	python3 -m pip list
+}
+depedencies() {
+	depedenciespackage
+	depedenciesmodulepython
+}
+depedencies
